@@ -1,0 +1,14 @@
+[
+    {
+        "topicId": "douyin",
+        "topicName": "抖音",
+        "topicUrl": "https://www.douyin.com",
+        "logoUrl": "./assets/images/logo/douyin-logo-horizontal-small.svg"
+    },
+    {
+        "topicId": "xigua",
+        "topicName": "西瓜视频",
+        "topicUrl": "https://www.ixigua.com",
+        "logoUrl": "./assets/images/logo/xigua-logo.svg"
+    }
+]
