@@ -1,5 +1,5 @@
-// import net from "./utils/net"
-// console.log("net:", net)
+import { request } from "./utils/net"
+console.log("request:", request)
 console.log("starting...")
 
 // 引用import的JS报错：Access to script at 'file:' from origin 'null' has been blocked by CORS policy（3种解决手段）
@@ -12,4 +12,6 @@ console.log("starting...")
 
 // 开发模式：组件化 | 声明式
 // TODO vue.js 的简版
+
+// 构建工具：vite
 
