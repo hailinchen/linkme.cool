@@ -11,7 +11,10 @@ console.log("starting...")
 
 
 // 开发模式：组件化 | 声明式
-// TODO vue.js 的简版
+// TODO vue.js 的简版 - https://vuejs.org/ | 
 
-// 构建工具：vite
+// 构建工具：vite - https://cn.vitejs.dev/
 
+// 包管理工具：pnpm - https://pnpm.io/zh/
+
+// 简洁
