@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    box-sizing: border-box;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a, a:visited  {
+    color: rgb(82, 137, 240);
+    /* color: inherit; */
+    background: initial;
+    /* text-decoration: none; */
+}
+a:hover {
+    /* color: rgb(82, 137, 240); */
+    color: inherit;
+}
+a.no-underline {
+    text-decoration: none
+}

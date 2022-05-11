@@ -1,0 +1,207 @@
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    padding: 0 80px;
+    background: #fff;
+    box-shadow: 0 6px #000000;
+}
+.navbar-box {
+    max-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+.nav-item-box {
+    margin-left: 63px;
+    position: relative;
+    top: 3px;
+
+    display: flex;
+    flex: 1;
+}
+.nav-item {
+    margin-right: 30px;
+    padding: 4px;
+
+    color: #747070;
+    background: initial;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.nav-item.active {
+    /* border: 1px solid; */
+    outline: -webkit-focus-ring-color auto 1px;
+}
+/* .nav-item:hover {
+    background: #000000;
+    color: #fff;
+    color: #aa3434;
+} */
+/* .nav-item:visited, .nav-item:focus-visible, .nav-item:focus-within {
+    color: #747070;
+    color: #aa3434;
+    background: initial;
+} */
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* border: 2px solid #ebd997de; */
+}
+.avatar img {
+    width: 100%;
+}
+.content {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 40px 20px;
+    /* height: 80vh; */
+    /* height: 1000px; */
+    /* height: calc(100vh - 224px); */
+    height: calc(100vh - 234px);
+    /* overflow: scroll; */
+}
+.footer {
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #747070;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e2e2e287;
+}
+.footer p {
+    padding: 0 10px;
+}
+
+.icon {}
+.icon-logo {
+    font-weight: 600;
+    font-size: 25px;
+}
+.icon-logo.red {
+    color: rgb(240, 77, 77);
+}
+
+.mark-wrapper h3 {
+    color: rgb(240, 77, 77);
+    /* color: rgb(82, 137, 240); */
+}
+.mark-wrapper a {
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+/* 滚动条自定义样式 */
+.frame {
+    overflow-y: auto;
+}
+.frame::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.frame::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.frame::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.frame::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* title-tip down */
+.title-tip[title]:hover {
+    position: relative;
+}
+.title-tip[title]:hover:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99999;
+    content: attr(title);
+    margin-top: 0.5em;
+    padding: 0.5em;
+    width: 100px;    /* change it */
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: inherit;
+    color: #FFF;
+    text-align: center;
+    background-color: #222;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.title-tip[title]:hover:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 99999;
+    content: '';
+    margin-left: -0.125em;
+    width: 0;
+    height: 0;
+    border: 0.25em dashed transparent;
+    border-bottom: 0.25em solid #222;
+    font-size: inherit;
+}
+
+/* title-tip-up */
+.title-tip-up[title]:hover:before {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.title-tip-up[title]:hover:after {
+    top: auto;
+    bottom: 100%;
+    border: 0.25em dashed transparent;
+    border-top: 0.25em solid #222;
+}
+
+/* title-tip-right */
+.title-tip-right[title]:hover:before {
+    top: auto;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0.5em;
+}
+.title-tip-right[title]:hover:after {
+    top: 50%;
+    left: 100%;
+    margin-left: 0;
+    margin-top: -0.125em;
+    border: 0.25em dashed transparent;
+    border-right: 0.25em solid #222;
+}
+
+/* title-tip-left */
+.title-tip-left[title]:hover:before {
+    top: auto;
+    left: auto;
+    right: 100%;
+    margin-top: 0;
+    margin-right: 0.5em;
+}
+.title-tip-left[title]:hover:after {
+    top: 50%;
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-top: -0.125em;
+    border: 0.25em dashed transparent;
+    border-left: 0.25em solid #222;
+}
