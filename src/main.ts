@@ -18,3 +18,4 @@ createApp(App).mount('#app')
 // 包管理工具：pnpm - https://pnpm.io/zh/
 // 简洁
 
+// 移动端优先

@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #e2e2e287;
+    /* border-top: 1px solid #e2e2e287; */
 }
 .footer p {
     padding: 0 10px;

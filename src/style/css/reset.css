@@ -10,8 +10,8 @@ ul {
     list-style: none;
 }
 a, a:visited  {
-    color: rgb(82, 137, 240);
-    /* color: inherit; */
+    /* color: rgb(82, 137, 240); */
+    color: inherit;
     background: initial;
     /* text-decoration: none; */
 }
