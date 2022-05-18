@@ -1,55 +1,66 @@
 <script setup lang="ts">
-import topicList from '../../data/json/topicList.json'
-console.log('topicList:', topicList)
+import MobileBrowser from './MobileBrowser.vue'
+import PCBrowser from './PCBrowser.vue'
+// import Topic from '../Topic/Index.vue'
 </script>
 
 <template>
-    <section class="content frame">
-        <div class="topic-wrapper">
-            <!-- <a target="_blank" href="https://www.douyin.com">
-                <div class="topic">
-                    <img class="icon icon-topic" src="./assets/images/logo/douyin-logo-horizontal-small.svg" alt="抖音" />
-                </div>
-            </a> -->
-            <!-- <a target="_blank" href="https://www.ixigua.com/">
-                <div class="topic">
-                    <img class="icon icon-topic" src="./assets/images/logo/xigua-logo.svg" alt="西瓜视频"/>
-                </div>
-            </a> -->
-            
-            <!-- <div class="topic" v-for="(item, index) in topicList" :key="index">
-                <a target="_blank" href="https://doyoudo.com/">
-                    <img class="icon icon-topic" src="../../assets/image/logo/doyoudo-logo.png" alt="doyoudo.com" />
-                </a>
-            </div> -->
+    <section class="content flex">
+        <!-- <PCBrowser class="item" url="https://www.mgtv.com/"/> -->
+        <!-- <PCBrowser class="item" url="https://v.qq.com/"/> -->
+        <!-- <PCBrowser class="item" url="https://y.qq.com/"/> -->
+        <!-- <PCBrowser class="item" url="https://www.ixigua.com/"/> -->
+        <PCBrowser class="item" url="https://www.douyin.com/"/>
+        <!-- 薛汀哲 抖音 -->
+        <PCBrowser class="item" url="https://www.douyin.com/user/MS4wLjABAAAA-x7GM0_Fcxel8a2wyt_tzTw_yo5198XFQIqW9BihLgg"/>
+        <PCBrowser class="item" url="https://www.youku.com/"/>
+        <PCBrowser class="item" url="https://www.youtube.com/"/>
+        
+        <!-- <MobileBrowser class="item" url="https://m.youtube.com/"/> -->
+        <!-- <MobileBrowser class="item" url="https://www.netflix.com/hk/browse/genre/839338"/> -->
+        <!-- <MobileBrowser class="item" url="https://naifei.pro/m/"/> -->
 
-            <div class="topic" v-for="(item, index) in topicList" :key="index">
-                <a target="_blank" :href="item.topicUrl"><img class="icon icon-topic" :src="item.logoUrl" :alt="item.topicName" /></a>
-            </div>
-        </div>
-        <div class="mark-wrapper"></div>
+        <!-- <MobileBrowser class="item" url="https://m.bilibili.com/space/29959830"/> -->
+        <!-- <MobileBrowser class="item" url="https://m.mgtv.com/"/> -->
+        <!-- <MobileBrowser class="item" url="https://m.twitch.tv/"/> -->
+        <!-- <MobileBrowser class="item" url="https://www.tiktok.com/"/> -->
+        <!-- <MobileBrowser class="item" url="https://www.iq.com/"/> -->
+        <!-- <MobileBrowser class="item" url="https://m.bilibili.com/"/> -->
+        <!-- <MobileBrowser class="item" url="https://m.v.qq.com/"/> -->
+        <!-- <MobileBrowser class="item" url="https://m.ixigua.com/"/> -->
+        <!-- <MobileBrowser class="item" url="https://m.weibo.cn/"/> -->
+        <!-- <MobileBrowser class="item" url="https://ddrk.me/"/> -->
+        <!-- <MobileBrowser class="item" url="https://www.nftcn.com.cn/h5/#/"/> -->
+        <!-- <MobileBrowser class="item" url="https://linktr.ee/allenchan"/> -->
+        
     </section>
 </template>
 
 <style scoped>
 .content {
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 10px auto;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     /* height: 80vh; */
     /* height: 1000px; */
     /* height: calc(100vh - 224px); */
     /* height: calc(100vh - 234px); */
     /* overflow: scroll; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
+}
+.grid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto auto;
 }
 
-.mark-wrapper h3 {
-    color: rgb(240, 77, 77);
-    /* color: rgb(82, 137, 240); */
+.flex {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.mark-wrapper a {
-    margin-bottom: 12px;
-    display: inline-block;
+.flex .item {
+    margin: 25px;
 }
 </style>

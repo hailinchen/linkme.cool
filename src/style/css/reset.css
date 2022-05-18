@@ -22,3 +22,7 @@ a:hover {
 a.no-underline {
     text-decoration: none
 }
+::-webkit-scrollbar {
+    /* width: 6px; */
+    display: none;
+}
